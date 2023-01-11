@@ -4,11 +4,13 @@ import ReactDOM from 'react-dom/client'
 import Type from './type'
 // import './index.css'
 import Todo from './todo'
+import Timer from './timer'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Type/> */}
-    <Todo/>
+    {/* <Todo/> */}
+    <Timer/>
   </React.StrictMode>,
 )
