@@ -1,7 +1,7 @@
 import React from 'react'
 import {useTimer} from "react-timer-hook"
 
-function timer({ expiryTimestomp}: {expiryTimestamp:number}) {
+function timer({expiryTimestomp}: {expiryTimestomp:number}) {
     const {
         seconds,
         minutes,
