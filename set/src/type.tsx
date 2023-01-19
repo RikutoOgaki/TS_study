@@ -10,7 +10,7 @@ function type() {
     // any型
     let some:any;
     some = 123;  
-    some = "はるや";
+    some = "マミー";
 
     // インターフェイス
     interface User{

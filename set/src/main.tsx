@@ -9,8 +9,8 @@ import Timer from './timer'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <Type/> */}
+    <Type/>
     {/* <Todo/> */}
-    <Timer/>
+    {/* <Timer/> */}
   </React.StrictMode>,
 )
