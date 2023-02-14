@@ -6,6 +6,7 @@ import Type from './type'
 import Todo from './todo'
 import Timer from './timer'
 import Ks from './ks'
+import Samp from './sample01'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     {/* <Type/> */}
     {/* <Todo/> */}
     {/* <Timer/> */}
-    <Ks/>
+    {/* <Ks/> */}
+    <Samp/>
   </React.StrictMode>,
 )
