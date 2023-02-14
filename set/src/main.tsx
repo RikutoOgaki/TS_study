@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     {/* <Todo/> */}
     {/* <Timer/> */}
     {/* <Ks/> */}
-    {/* <Samp/> */}
-    <Clac/>
+    <Samp/>
+    {/* <Clac/> */}
   </React.StrictMode>,
 )
