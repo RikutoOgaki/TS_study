@@ -7,6 +7,7 @@ import Todo from './todo'
 import Timer from './timer'
 import Ks from './ks'
 import Samp from './sample01'
+import Clac from './calc'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     {/* <Todo/> */}
     {/* <Timer/> */}
     {/* <Ks/> */}
-    <Samp/>
+    {/* <Samp/> */}
+    <Clac/>
   </React.StrictMode>,
 )
