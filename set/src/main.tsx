@@ -6,10 +6,11 @@ import Type from './type'
 import Todo from './todo'
 import Timer from './timer'
 import Ks from './ks'
-import Samp from './sample01'
+import Samp from './sample/sample01'
 import Clac from './calc'
 import Day from './day'
 import Comp from './compo'
+import Con from './sample/sample02'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     {/* <Samp/> */}
     {/* <Clac/> */}
     {/* <Day/> */}
-    <Comp/>
+    {/* <Comp/> */}
+    <Con/>
   </React.StrictMode>,
 )
