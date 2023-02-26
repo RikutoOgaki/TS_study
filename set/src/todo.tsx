@@ -1,27 +1,44 @@
 import React, { useState } from 'react'
 
+
+
+type Todostate = {
+  memo:string,
+  list:Array<string>
+}
+
 function todo() {
-    const[todo,setTodo] = useState("");
-    const[add,setAdd] = useState("");
 
+  const [state,setState] = useState<Todostate>({
+    memo:'',
+    list:[]
+  })
 
-    const clickEvent = () =>{
-        setAdd(todo)
-        setTodo("");
-    }
-    const clickDelete = () =>{
-      setAdd("");
-    }
+  console.log(state.list);
+  
+
   return (
-    <div>
-            <input
-            value={todo}
-            onChange={(event)=>setTodo(event.target.value)}
+    <>
+        <input type="text"  value={state.memo}
+          onChange={(e)=>setState({
+            ...state,
+            memo:e.target.value
+          })}
         />
-        <button onClick={clickEvent}>追加</button>
-        <button onClick={clickDelete}>削除</button>
-        <p>{add}</p>
-    </div>
+        <input type="button" value="追加" 
+          onClick={()=>setState({
+            ...state,
+            list:[state.memo]
+          })}
+        />
+        {state.list.map((v)=>{
+          <div>
+            <p>{v}</p>
+            <button>削除</button>
+          </div>
+        })}
+        
+    </>
   )
 }
 

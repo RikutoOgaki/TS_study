@@ -16,13 +16,13 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Type/> */}
-    {/* <Todo/> */}
+    <Todo/>
     {/* <Timer/> */}
     {/* <Ks/> */}
     {/* <Samp/> */}
     {/* <Clac/> */}
     {/* <Day/> */}
     {/* <Comp/> */}
-    <Con/>
+    {/* <Con/> */}
   </React.StrictMode>,
 )
