@@ -14,6 +14,15 @@ function todo() {
     list:[]
   })
 
+  const addList = () =>{
+    for(let i=0; i<5; i++){
+      setState({
+        ...state,
+        list:[state.memo]
+      })
+    }
+  }
+  
   console.log(state.list);
   
 
@@ -26,18 +35,8 @@ function todo() {
           })}
         />
         <input type="button" value="追加" 
-          onClick={()=>setState({
-            ...state,
-            list:[state.memo]
-          })}
+          onClick={addList}
         />
-        {state.list.map((v)=>{
-          <div>
-            <p>{v}</p>
-            <button>削除</button>
-          </div>
-        })}
-        
     </>
   )
 }

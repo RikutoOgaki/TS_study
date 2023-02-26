@@ -11,12 +11,13 @@ import Clac from './calc'
 import Day from './day'
 import Comp from './compo'
 import Con from './sample/sample02'
+import Array from './array'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Type/> */}
-    <Todo/>
+    {/* <Todo/> */}
     {/* <Timer/> */}
     {/* <Ks/> */}
     {/* <Samp/> */}
@@ -24,5 +25,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     {/* <Day/> */}
     {/* <Comp/> */}
     {/* <Con/> */}
+    <Array/>
   </React.StrictMode>,
 )
