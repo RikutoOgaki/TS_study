@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Type/> */}
-    {/* <Todo/> */}
+    <Todo/>
     {/* <Timer/> */}
     {/* <Ks/> */}
     {/* <Samp/> */}
@@ -25,6 +25,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     {/* <Day/> */}
     {/* <Comp/> */}
     {/* <Con/> */}
-    <Array/>
+    {/* <Array/> */}
   </React.StrictMode>,
 )

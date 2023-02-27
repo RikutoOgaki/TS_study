@@ -1,40 +1,38 @@
 import React, { useState } from 'react'
 
-type Todostate = {
-  memo:string,
+type TodoState = {
+  task:string,
   list:Array<string>
 }
 
-function todo() {
 
-  const [state,setState] = useState<Todostate>({
-    memo:'',
+function todo() {
+  
+  const [state,setState] = useState<TodoState>({
+    task:'',
     list:[]
   })
-
-  const addList = () =>{
-      setState({
-        ...state,
-        list:[state.memo]
-      })
-  }
   
-  console.log(state.list);
+  const addList=()=>{
+    state.list.push(state.task)
+  }
   
 
   return (
-    <>
-        <input type="text"  value={state.memo}
-          onChange={(e)=>setState({
-            ...state,
-            memo:e.target.value
-          })}
-        />
-        <input type="button" value="追加" 
-          onClick={()=> addList()}
-        />
-        
-    </>
+    <div>
+      <input type="text"  value={state.task}
+        onChange={(e)=>setState({
+          ...state,
+          task:e.target.value
+        })}
+      />
+      <input type="button" value="やることリストに追加" 
+        onClick={()=> addList()}
+      />
+      {state.list.map((v)=>
+        <p key={v}>{v}</p>
+      )}
+    </div>
   )
 }
 
