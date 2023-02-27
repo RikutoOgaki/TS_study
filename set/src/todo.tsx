@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 
-
-
 type Todostate = {
   memo:string,
   list:Array<string>
@@ -15,12 +13,10 @@ function todo() {
   })
 
   const addList = () =>{
-    for(let i=0; i<5; i++){
       setState({
         ...state,
         list:[state.memo]
       })
-    }
   }
   
   console.log(state.list);
@@ -35,8 +31,9 @@ function todo() {
           })}
         />
         <input type="button" value="追加" 
-          onClick={addList}
+          onClick={()=> addList()}
         />
+        
     </>
   )
 }
