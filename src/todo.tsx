@@ -5,7 +5,6 @@ type TodoState = {
   list:Array<string>
 }
 
-
 function todo() {
   
   const [state,setState] = useState<TodoState>({
@@ -14,7 +13,10 @@ function todo() {
   })
   
   const addList=()=>{
-    state.list.push(state.task)
+    setState({
+      ...state,
+      list:list.push(state.task)
+    })
   }
   
 
