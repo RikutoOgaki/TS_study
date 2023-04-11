@@ -1,15 +1,15 @@
 import React, { useRef, useState } from 'react'
 import type from '../type'
-import  './style.css'
+import './style.css'
 
 
 interface propsStyle {
-    img:string;
-    name:string;
-    class:string;
+    img: string;
+    name: string;
+    class: string;
 }
 
-const slideImg = (props:propsStyle) => {
+const slideImg = (props: propsStyle) => {
 
 
 
@@ -17,7 +17,7 @@ const slideImg = (props:propsStyle) => {
     //  card.current.style.opacity = 0;
     //  card.current?.style.display
 
-     
+
 
     return (
         <div className='img_wrap'>
@@ -25,9 +25,9 @@ const slideImg = (props:propsStyle) => {
             <p>{props.class}</p>
             <img src={props.img} alt="" />
         </div>
-        )
-    }
-    
+    )
+}
+
 
 
 // type props = {
@@ -40,6 +40,6 @@ const slideImg = (props:propsStyle) => {
 //         <img src={hoge} alt="" />
 //     </div>
 //   )
-// }
+// } 
 
 export default slideImg
